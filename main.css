@@ -89,25 +89,25 @@ body {
 
 @media screen and (max-width: 420px) {
     .nav-bar {
-        padding: 0 20px;
+        padding: 0 20px !important;
     }
     #logo, .nav-title {
-        font-size: 18px;
+        font-size: 18px !important;
     }
     .nav-list {
-        gap: 5px;
+        gap: 10px !important;
     }
 }
 
 @media screen and (max-width: 375px) {
     .nav-bar {
-        padding: 0 15px;
+        padding: 0 15px !important;
     }
     #logo, .nav-title {
-        font-size: 15px;
+        font-size: 15px !important;
     }
     .nav-list {
-        gap: 2px;
+        gap: 10px !important;
     }
 }
 

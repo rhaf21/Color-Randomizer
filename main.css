@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --font-fam-primary: 'Poiret One', serif;
+    --font-fam-secondary: 'Roboto Slab', serif;
+    --primary-color: rgb(215, 215, 215);
+    --secondary-color: rgb(22, 22, 22);
+}
+
+/* GLOBAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: inline;
+    height: 100vh;
+    transition: 300ms ease-in-out;
+}
+
+/* NAV */
+
+.nav-bar {
+    position: relative;
+    width: 100%;
+    top: -18px;
+    color: var(--font-fam-primary);
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#logo {
+    font-family: var(--font-fam-primary);
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: var(--primary-color);
+}
+
+.nav-title {
+    font-family: var(--font-fam-secondary);
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-family: var(--font-fam-primary);
+    color: var(--primary-color);
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    #logo, .nav-title {
+        font-size: 21px;
+    }
+    .nav-list {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .nav-bar {
+        padding: 0 30px;
+    }
+    #logo, .nav-title {
+        font-size: 18px;
+    }
+    .nav-list {
+        gap: 20px;
+    }
+}
+
+/* BODY */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: center;
+    gap: 20px;
+}
+
+h2 {
+    font-family: var(--font-fam-secondary);
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+input {
+    display: none; 
+}
+
+.btn {
+    font-family: var(--font-fam-secondary);
+    padding: 10px;
+    background-color: rgba(22, 22, 22, 0.75);
+    color: var(--primary-color);
+    width: 250px;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    background-color: rgba(22, 22, 22);
+    width: 255px;
+    transition: 300ms ease-in-out;
+    border: none;
+}

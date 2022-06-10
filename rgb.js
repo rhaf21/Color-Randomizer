@@ -18,12 +18,12 @@ btn.addEventListener('click', function () {
 copy.addEventListener('click', function (){
     let rgb = document.getElementById('rgbValue');
     
+    rgb.select();
     rgb.focus();
     setTimeout(() => rgb.setSelectionRange(0, 99999),0); /* For mobile devices */
-    rgb.select();
-
+    
     navigator.clipboard.writeText(rgb.value);
   
-    alert("Copied the text: " + rgb.value);
+    alert(rgb.value + " has beed copied!");
 });
     

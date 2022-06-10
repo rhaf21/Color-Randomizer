@@ -19,6 +19,7 @@ copy.addEventListener('click', function (){
     let rgb = document.getElementById('rgbValue');
     
     rgb.select();
+    rgb.focus();
     rgb.setSelectionRange(0, 99999); /* For mobile devices */
 
     navigator.clipboard.writeText(rgb.value);

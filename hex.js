@@ -23,5 +23,5 @@ copy.addEventListener('click', function (){
 
     navigator.clipboard.writeText(hex.value);
   
-    alert("Copied the text: " + hex.value);
+    alert(hex.value + " has beed copied!");
 });
